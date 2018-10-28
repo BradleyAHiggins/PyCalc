@@ -1,8 +1,7 @@
 Calculator TODO:
 version 0.1
 lexer.py
-add FloatP support
-add SpecialFunctions support
+add modulo support '%'
 write test cases for tokenizer()
 
 calulate.py
@@ -10,14 +9,17 @@ add PEMDAS support - DONE
 add parenthesis balancing support - DONE
 add post script notation support - DONE
 add calculation support - DONE
+add '%' support
 write unit tests for toPostFixN()
 write unit tests for calcExpression()
 
 version 0.1.1
 lexer.py
-add modulo support '%'
+
+add FloatP support
+add SpecialFunctions support
 calculate.py
-add '%' support
+
 
 pycalc.py
 update printHelpMessage with new operator

@@ -1,5 +1,5 @@
 class Token:
-    opDict = {'+' : "ADD", '-' : "SUB", '/' : "DIV", '*' : "MULT", '^' : "EXP"}
+    opDict = {'+' : "ADD", '-' : "SUB", '/' : "DIV", '*' : "MULT", '^' : "EXP",'%': "MOD"}
 
     def __init__(self):
         return self
@@ -81,7 +81,7 @@ class Operator(Token):
                 break
         if self.ID == "EXP":
             self.precedence = 4
-        elif self.ID == "MUlT" or self.ID == "DIV":
+        elif self.ID == "MUlT" or self.ID == "DIV" or self.ID == "MOD":
             self.precedence = 3
         else:
             self.precedence = 2

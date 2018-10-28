@@ -2,7 +2,7 @@
 def toPostFixN(tokens):
     output = []
     operators = []
-    valid_operators = {"ADD" : "LEFT", "SUB": "LEFT", "MULT": "LEFT", "DIV" : "LEFT", "EXP" : "RIGHT"}
+    valid_operators = {"ADD" : "LEFT", "SUB": "LEFT", "MULT": "LEFT", "DIV" : "LEFT", "EXP" : "RIGHT", "MOD": "LEFT"}
     
     for tok in tokens:
         if tok.ID == "INT" or tok.ID == "FLOAT":
@@ -61,9 +61,12 @@ def divide(dividend, divisor):
     return dividend / divisor
 def exponent(number, expon):
     return number**expon
+def modulo(firstNum, secondNum):
+    return firstNum % secondNum
+
 def calcExpression(tokens):
     calcStack = []
-    valid_operators = ["ADD", "SUB", "MULT", "DIV", "EXP"]
+    valid_operators = ["ADD", "SUB", "MULT", "DIV", "EXP","MOD"]
     for tok in tokens:
         if tok.ID == "INT" or tok.ID == "FLOAT":
             calcStack.append(tok.value)
@@ -81,6 +84,8 @@ def calcExpression(tokens):
                     calcStack.append(divide(firstNum, secondNum))
                 elif tok.ID == "EXP":
                     calcStack.append(exponent(firstNum, secondNum))
+                elif tok.ID == "MOD":
+                    calcStack.append(modulo(firstNum, secondNum))
             else:
                 #raise invalid expression error
                 pass
