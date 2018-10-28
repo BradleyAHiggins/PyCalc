@@ -1,0 +1,33 @@
+Calculator TODO:
+version 0.1
+lexer.py
+add FloatP support
+add SpecialFunctions support
+write test cases for tokenizer()
+
+calulate.py
+add PEMDAS support - DONE
+add parenthesis balancing support - DONE
+add post script notation support - DONE
+add calculation support - DONE
+write unit tests for toPostFixN()
+write unit tests for calcExpression()
+
+version 0.1.1
+lexer.py
+add modulo support '%'
+calculate.py
+add '%' support
+
+pycalc.py
+update printHelpMessage with new operator
+update version number when all tests are passed
+
+version 0.2
+lexer.py
+add FloatP support
+add SpecialFunctions support
+write unit tests for tokenizer() for new features
+calculate.py
+write unit test for FloatP support and Special Functions
+adapt toPostFixN for Special Funtions

@@ -1,0 +1,9 @@
+estimated time		date
+1.5 hour	 	2018/10/6
+4 hour			2018/10/7
+2 hour			2018/10/20
+3 hour			2018/10/21
+
+version 0.1 Total : 10.5 hours
+
+
